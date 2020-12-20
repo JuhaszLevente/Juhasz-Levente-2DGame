@@ -24,6 +24,7 @@ public class Bunny : MonoBehaviour
         {
             if (collision.gameObject.name == "Player")
             {
+                ScoreScript.scoreValue += 1;
                 Destroy(gameObject);
             }
         }
